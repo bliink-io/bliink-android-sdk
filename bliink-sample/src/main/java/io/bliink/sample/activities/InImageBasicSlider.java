@@ -47,13 +47,16 @@ public class InImageBasicSlider extends AppCompatActivity {
 
     public void addTag(String imageUrl) {
 
-        HashMap<String, String> option = new HashMap<String, String>();
-        option.put(getString(R.string.page_title), getString(R.string.page_title_value));
-        option.put(getString(R.string.page_description), getString(R.string.page_description_value));
-        option.put(getString(R.string.image_url), imageUrl);
-        option.put(getString(R.string.page_url), getString(R.string.page_url_value));
+        HashMap<String, String> options = new HashMap<String, String>();
+        options.put(getString(R.string.page_title), getString(R.string.page_title_value));
+        options.put(getString(R.string.page_description), getString(R.string.page_description_value));
+        options.put(getString(R.string.image_url), imageUrl);
+        options.put(getString(R.string.page_url), getString(R.string.page_url_value));
+        options.put(getString(R.string.keywords), getString(R.string.keywords_value));
+        // TODO enable test mode
+        // options.put("test", "true");
 
-        this.tagList.add(option);
+        this.tagList.add(options);
     }
 
     public void initViewPager() {

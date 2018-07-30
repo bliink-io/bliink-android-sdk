@@ -30,6 +30,9 @@ public class InImageBasicFull extends AppCompatActivity {
         options.put(getString(R.string.page_description), getString(R.string.page_description_value));
         options.put(getString(R.string.image_url), getString(R.string.image_url_value));
         options.put(getString(R.string.page_url), getString(R.string.page_url_value));
+        options.put(getString(R.string.keywords), getString(R.string.keywords_value));
+        // TODO enable test mode
+        // options.put("test", "true");
 
         loadInImageContent();
     }
