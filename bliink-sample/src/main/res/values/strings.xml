@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BliinkSample</string>
+    <string name="title_activity_main">HomeActivity</string>
+    <string name="txt_description"> titulaire face au Barça ou à Manchester United. Gaston Varane a été interrogé par Marca aujourd hui, et il dévoile quelques anecdotes concernant son fils, Raphaël. Comme tous les enfants, le défenseur du Real Madrid a débuté balle au pied dans le jardin familial. Il a commencé avec le rugby mais il n aimait pas ça. A la maison, il n arrêtait pas de jouer au foot et je crois que c était mon rôle de l aider à se familiariser avec le ballon. Mes enfants s amusaient à envoyer la balle chez le voisin mais Raphaël a vite compris que le football, ce n était pas ça, raconte Gaston Varane. Le papa d’origine martiniquaise a passé son temps à expliquer à ses enfants comment bien jouer au football. Je leur ai montré les contrôles de balle, la bonne manière de s améliorer. Anthony (le fils ainé) était meilleur que Raphaël, en plus il était attaquant, mais Raphaël a vite appris à jouer les duels, à récupérer le ballon sans tacler, explique le père du double buteur madrilène en demi-finale de coupe du Roi, face au FC Barcelone. Gaston Varane en profite pour dévoiler le point fort de son fils. La force mentale, depuis toujours. Il a toujours eu une bonne technique, il était rapide, puissant mais il est arrivé jusqu ici grâce au travail.</string>
+    <string name="text_collapsing_image">Collapsing image example</string>
+    <string name="title">Raphaël Varane</string>
+    <string name="page_title_value">BLIINK - Technology</string>
+    <string name="page_description_value">Open up a whole new range of possibilities through our in-image technology</string>
+    <string name="keywords_value">bliink, technology</string>
+    <string name="image_url_value">https://bliink.io/img/bg/bg--technology.jpg</string>
+    <string name="page_url_value">https://bliink.io/technology</string>
+    <string name="page_title">pageTitle</string>
+    <string name="page_description">pageDescription</string>
+    <string name="keywords">keywords</string>
+    <string name="image_url">imageUrl</string>
+    <string name="page_url">pageUrl</string>
+</resources>
