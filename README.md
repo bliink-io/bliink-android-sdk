@@ -6,7 +6,7 @@
 
 Download ou sample app from our github repository
 ```
-git clone https://gitlab.bliink.io/mobile/android-sdk.git
+git clone https://github.com/bliink-io/bliink-android-sdk.git
 ```
 
 ### Run the sample app
@@ -18,7 +18,7 @@ Run the project by clicking on run button in Android Studio or Maj + F10
 ### Dependencies
 Add the SDK to your **build.gradle**
 ```
-implementation 'io.bliink:bliink-android-sdk:[LAST_VERSION]'
+implementation 'io.bliink:bliink-android-sdk:1.0.2'
 ```
 And add the dependencies
 ```
@@ -31,8 +31,8 @@ implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
 
 Import the library in your **MainActivity** and in your other files who will show the in-image ad
 ```
-import io.bliink.sdk.components.BLIINKInImageView;
-import io.bliink.sdk.services.models.BLIINKAdContent;
+import BLIINKInImageView;
+import BLIINKAdContent;
 ```
 
 ## Load an ad
@@ -71,7 +71,7 @@ You have to instantiate the adView in the same layout as the image, so it will a
             android:adjustViewBounds="true"/>
 
         //The adView
-        <io.bliink.sdk.components.BLIINKInImageView
+        <BLIINKInImageView
             android:id="@+id/ui_home_ad_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
