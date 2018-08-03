@@ -9,6 +9,7 @@ import io.bliink.sample.components.ViewPagerAdapter;
 import io.bliink.sample.components.ViewPagerListener;
 import io.bliink.sample.utils.Constants;
 import io.bliink.sdk.components.BLIINKInImageView;
+import io.bliink.sdk.services.BLIINKHttpClient;
 import io.bliink.sdk.services.models.BLIINKAdContent;
 import io.bliink.sdk.utils.BLIINKUtils;
 
@@ -47,14 +48,13 @@ public class InImageBasicSlider extends AppCompatActivity {
 
     public void addTag(String imageUrl) {
 
-        HashMap<String, String> option = new HashMap<String, String>();
-        option.put(getString(R.string.page_title), getString(R.string.page_title_value));
-        option.put(getString(R.string.page_description), getString(R.string.page_description_value));
-        option.put(getString(R.string.image_url), imageUrl);
-        option.put(getString(R.string.page_url), getString(R.string.page_url_value));
-        option.put(getString(R.string.tags), getString(R.string.tags_value));
+        HashMap<String, String> options = new HashMap<String, String>();
+        options.put(getString(R.string.page_title), getString(R.string.page_title_value));
+        options.put(getString(R.string.page_description), getString(R.string.page_description_value));
+        options.put(getString(R.string.image_url), imageUrl);
+        options.put(getString(R.string.page_url), getString(R.string.page_url_value));
 
-        this.tagList.add(option);
+        this.tagList.add(options);
     }
 
     public void initViewPager() {
@@ -76,7 +76,7 @@ public class InImageBasicSlider extends AppCompatActivity {
             }
 
             @Override
-            public void adLoadingFailed(String e) {
+            public void adLoadingFailed(BLIINKHttpClient.BliinkError e) {
                 BLIINKUtils.v(TAG, "adLoadingFailed " + e);
             }
         };

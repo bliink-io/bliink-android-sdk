@@ -4,10 +4,10 @@ package io.bliink.sample.activities;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-
 import io.bliink.sample.R;
 import io.bliink.sample.utils.Constants;
 import io.bliink.sdk.components.BLIINKInImageView;
+import io.bliink.sdk.services.BLIINKHttpClient;
 import io.bliink.sdk.services.models.BLIINKAdContent;
 import io.bliink.sdk.utils.BLIINKUtils;
 
@@ -31,7 +31,6 @@ public class InImageBasicCollapsing extends AppCompatActivity {
         options.put(getString(R.string.page_description), getString(R.string.page_description_value));
         options.put(getString(R.string.image_url), getString(R.string.image_url_value));
         options.put(getString(R.string.page_url), getString(R.string.page_url_value));
-        options.put(getString(R.string.tags), getString(R.string.tags_value));
 
         loadInImageContent();
     }
@@ -47,7 +46,7 @@ public class InImageBasicCollapsing extends AppCompatActivity {
             }
 
             @Override
-            public void adLoadingFailed(String e) {
+            public void adLoadingFailed(BLIINKHttpClient.BliinkError e) {
                 BLIINKUtils.v(TAG, "adLoadingFailed " + e);
             }
         };
