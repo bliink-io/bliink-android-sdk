@@ -76,7 +76,7 @@ public class InImageBasicSlider extends AppCompatActivity {
             }
 
             @Override
-            public void adLoadingFailed(BLIINKHttpClient.BliinkError e) {
+            public void adLoadingFailed(String e) {
                 BLIINKUtils.v(TAG, "adLoadingFailed " + e);
             }
         };
