@@ -6,7 +6,7 @@
 
 Download ou sample app from our github repository
 ```
-git clone https://github.com/bliink-io/bliink-android-sdk.git
+git clone https://gitlab.bliink.io/mobile/android-sdk.git
 ```
 
 ### Run the sample app
@@ -18,7 +18,7 @@ Run the project by clicking on run button in Android Studio or Maj + F10
 ### Dependencies
 Add the SDK to your **build.gradle**
 ```
-implementation 'io.bliink:bliink-android-sdk:1.0.2'
+implementation 'io.bliink:bliink-android-sdk:[LAST_VERSION]'
 ```
 And add the dependencies
 ```
