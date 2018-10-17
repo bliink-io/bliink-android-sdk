@@ -1,18 +1,19 @@
 <resources>
     <string name="app_name">BliinkSample</string>
     <string name="title_activity_main">HomeActivity</string>
-    <string name="txt_description"> Titulaire face au Barça ou à Manchester United. Gaston Varane a été interrogé par Marca aujourd hui, et il dévoile quelques anecdotes concernant son fils, Raphaël. Comme tous les enfants, le défenseur du Real Madrid a débuté balle au pied dans le jardin familial. Il a commencé avec le rugby mais il n aimait pas ça. A la maison, il n arrêtait pas de jouer au foot et je crois que c était mon rôle de l aider à se familiariser avec le ballon. Mes enfants s amusaient à envoyer la balle chez le voisin mais Raphaël a vite compris que le football, ce n était pas ça, raconte Gaston Varane. Le papa d’origine martiniquaise a passé son temps à expliquer à ses enfants comment bien jouer au football. Je leur ai montré les contrôles de balle, la bonne manière de s améliorer. Anthony (le fils ainé) était meilleur que Raphaël, en plus il était attaquant, mais Raphaël a vite appris à jouer les duels, à récupérer le ballon sans tacler, explique le père du double buteur madrilène en demi-finale de coupe du Roi, face au FC Barcelone. Gaston Varane en profite pour dévoiler le point fort de son fils. La force mentale, depuis toujours. Il a toujours eu une bonne technique, il était rapide, puissant mais il est arrivé jusqu ici grâce au travail.</string>
+    <string name="txt_description"> titulaire face au Barça ou à Manchester United. Gaston Varane a été interrogé par Marca aujourd hui, et il dévoile quelques anecdotes concernant son fils, Raphaël. Comme tous les enfants, le défenseur du Real Madrid a débuté balle au pied dans le jardin familial. Il a commencé avec le rugby mais il n aimait pas ça. A la maison, il n arrêtait pas de jouer au foot et je crois que c était mon rôle de l aider à se familiariser avec le ballon. Mes enfants s amusaient à envoyer la balle chez le voisin mais Raphaël a vite compris que le football, ce n était pas ça, raconte Gaston Varane. Le papa d’origine martiniquaise a passé son temps à expliquer à ses enfants comment bien jouer au football. Je leur ai montré les contrôles de balle, la bonne manière de s améliorer. Anthony (le fils ainé) était meilleur que Raphaël, en plus il était attaquant, mais Raphaël a vite appris à jouer les duels, à récupérer le ballon sans tacler, explique le père du double buteur madrilène en demi-finale de coupe du Roi, face au FC Barcelone. Gaston Varane en profite pour dévoiler le point fort de son fils. La force mentale, depuis toujours. Il a toujours eu une bonne technique, il était rapide, puissant mais il est arrivé jusqu ici grâce au travail.</string>
     <string name="text_collapsing_image">Collapsing image example</string>
     <string name="title">Raphaël Varane</string>
-    <string name="page_title_value">BLIINK - Technology</string>
-    <string name="description">Vendredi 6 juillet 2018, Raphaël Varane est passé de simple joueur de l’équipe de France à véritable héros national en marquant le premier but du quart de finale qui opposait les Bleus à l’Uruguay. Ainsi, les Français peuvent rêver de gagner la Coupe du Monde le 15 juillet prochain grâce à ce beau gosse qui a déjà remporté la Ligue des Champions cette année avec son club le Real Madrid. En couple avec la jolie Camille, le discret Raphaël est aussi père d’un petit Ruben, pour qui il est prêt à faire des miracles.</string>
-    <string name="page_description_value">Open up a whole new range of possibilities through our in-image technology</string>
-    <string name="keywords_value">bliink, technology</string>
-    <string name="image_url_value">https://bliink.io/img/bg/bg--technology.jpg</string>
-    <string name="page_url_value">https://bliink.io/technology</string>
+    <string name="page_title_value">Coupe du monde 2018</string>
+    <string name="page_description_value">Vendredi 6 juillet 2018, Raphaël Varane est passé de simple joueur de l’équipe de France à véritable héros national en marquant le premier but du quart de finale qui opposait les Bleus à l’Uruguay. Ainsi, les Français peuvent rêver de gagner la Coupe du Monde le 15 juillet prochain grâce à ce beau gosse qui a déjà remporté la Ligue des Champions cette année avec son club le Real Madrid. En couple avec la jolie Camille, le discret Raphaël est aussi père d’un petit Ruben, pour qui il est prêt à faire des miracles.</string>
+    <string name="keywords_value">bliink, foot, coupe du monde</string>
+    <string name="image_url_value">https://img.20mn.fr/ZUC1UEnBSu-PK5nehAfXsA/960x614_bus-bleus-champs-elysees</string>
+    <string name="page_url_value">https://www.20minutes.fr/sport/2313599-20180726-coupe-monde-2018-alexandre-benalla-donne-ordre-accelerer-rythme-bus</string>
+    <string name="tags_value">bliink, foot, coupe du monde</string>
     <string name="page_title">pageTitle</string>
     <string name="page_description">pageDescription</string>
     <string name="keywords">keywords</string>
     <string name="image_url">imageUrl</string>
     <string name="page_url">pageUrl</string>
+    <string name="tags">tags</string>
 </resources>
