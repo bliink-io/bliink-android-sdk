@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 def versionMajor = 0
 def versionMinor = 1
 def versionPatch = 0
-def versionBuild = 0
+def versionBuild = 3
 
 android {
 
@@ -67,5 +67,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation 'io.bliink:bliink-android-sdk:1.0.2'
+    implementation 'io.bliink:bliink-android-sdk:1.0.3'
 }
