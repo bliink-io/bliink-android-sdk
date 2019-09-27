@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import io.bliink.sample.R;
 import io.bliink.sample.utils.Constants;
 import io.bliink.sdk.components.BLIINKInImageView;
-import io.bliink.sdk.services.models.BLIINKAdContent;
+import io.bliink.sdk.services.models.Ad;
 import io.bliink.sdk.utils.BLIINKUtils;
 
 import java.util.HashMap;
@@ -42,7 +42,7 @@ public class InImageBasicFull extends AppCompatActivity {
 
         mBliinkInImageListener = new BLIINKInImageView.AdResponseHandler() {
             @Override
-            public void adLoadingCompleted(BLIINKAdContent adContent) {
+            public void adLoadingCompleted(Ad adContent) {
                 BLIINKUtils.v(TAG, "adLoadingCompleted");
             }
 

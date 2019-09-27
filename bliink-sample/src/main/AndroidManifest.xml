@@ -8,45 +8,29 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-
     <application
         android:name="io.bliink.sample.components.SampleApplication"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:hardwareAccelerated="true"
         android:roundIcon="@mipmap/iconbliink"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
-        android:allowBackup="true">
-        <activity android:name="io.bliink.sample.activities.MainActivity">
-            <!--<intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> -->
-        </activity>
-
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name="io.bliink.sample.activities.MainActivity" />
         <activity
             android:name="io.bliink.sample.activities.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name="io.bliink.sample.activities.InImageBasic">
-        </activity>
-
-        <activity android:name="io.bliink.sample.activities.InImageBasicFull">
-        </activity>
-
-        <activity android:name="io.bliink.sample.activities.InImageBasicSlider">
-        </activity>
-
-        <activity android:name="io.bliink.sample.activities.InImageBasicCollapsing">
-        </activity>
+        <activity android:name="io.bliink.sample.activities.InImageBasic" />
+        <activity android:name="io.bliink.sample.activities.InImageBasicFull" />
+        <activity android:name="io.bliink.sample.activities.InImageBasicSlider" />
+        <activity android:name="io.bliink.sample.activities.InImageBasicCollapsing" />
     </application>
 
 </manifest>

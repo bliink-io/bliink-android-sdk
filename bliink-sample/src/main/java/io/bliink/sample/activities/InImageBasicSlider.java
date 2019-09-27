@@ -9,7 +9,7 @@ import io.bliink.sample.components.ViewPagerAdapter;
 import io.bliink.sample.components.ViewPagerListener;
 import io.bliink.sample.utils.Constants;
 import io.bliink.sdk.components.BLIINKInImageView;
-import io.bliink.sdk.services.models.BLIINKAdContent;
+import io.bliink.sdk.services.models.Ad;
 import io.bliink.sdk.utils.BLIINKUtils;
 
 import java.util.ArrayList;
@@ -47,14 +47,15 @@ public class InImageBasicSlider extends AppCompatActivity {
 
     public void addTag(String imageUrl) {
 
-        HashMap<String, String> option = new HashMap<String, String>();
-        option.put(getString(R.string.page_title), getString(R.string.page_title_value));
-        option.put(getString(R.string.page_description), getString(R.string.page_description_value));
-        option.put(getString(R.string.image_url), imageUrl);
-        option.put(getString(R.string.page_url), getString(R.string.page_url_value));
-        option.put(getString(R.string.tags), getString(R.string.tags_value));
+        HashMap<String, String> options = new HashMap<String, String>();
+        options.put(getString(R.string.page_title), getString(R.string.page_title_value));
+        options.put(getString(R.string.page_description), getString(R.string.page_description_value));
+        options.put(getString(R.string.image_url), imageUrl);
+        options.put(getString(R.string.page_url), getString(R.string.page_url_value));
+        options.put(getString(R.string.tags), getString(R.string.tags_value));
+        options.put("test", "true");
 
-        this.tagList.add(option);
+        this.tagList.add(options);
     }
 
     public void initViewPager() {
@@ -71,7 +72,7 @@ public class InImageBasicSlider extends AppCompatActivity {
 
         mBliinkInImageListener = new BLIINKInImageView.AdResponseHandler() {
             @Override
-            public void adLoadingCompleted(BLIINKAdContent adContent) {
+            public void adLoadingCompleted(Ad adContent) {
                 BLIINKUtils.v(TAG, "adLoadingCompleted");
             }
 

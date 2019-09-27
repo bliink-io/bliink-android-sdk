@@ -32,7 +32,7 @@ implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
 Import the library in your **MainActivity** and in your other files who will show the in-image ad
 ```
 import BLIINKInImageView;
-import BLIINKAdContent;
+import Ad;
 ```
 
 ## Load an ad
@@ -40,12 +40,10 @@ import BLIINKAdContent;
 ### Initialize the Sdk
 In your **launcher activity** you need to create an instance of **BLIINK SDK**
 ```
-BLIINK.getInstance().initialize(this, [YOUR_NETWORK_ID], [YOUR_SITE_ID], true, 5);
+BLIINK.getInstance().initialize(this, true, 5);
 ```
 **Parameters:**
 - **this * _(Context)_:** The context of the application.
-- **[YOUR_NETWORK_ID] * _(Integer)_:** It's your network id.
-- **[YOUR_SITE_ID] * _(Integer)_:** It's your site id.
 - **true _(Boolean)_:** It's to authorize or not the location. It's an optional parameter and it is set to false by default.
 - **5 _(Integer)_:** It's the timeout that will be used to request the ad. This is an optional parameter, the default value is set to 5 and the unit is in seconds.
 
@@ -91,7 +89,7 @@ In a simple **activity** call the function **loadAd** with your tag ID, an hashm
 //Listener
 BLIINKInImageView.AdResponseHandler mBliinkInImageListener = new BLIINKInImageView.AdResponseHandler() {
             @Override
-            public void adLoadingCompleted(BLIINKAdContent adContent) {
+            public void adLoadingCompleted(Ad adContent) {
                 BLIINKUtils.v(TAG, "adLoadingCompleted");
             }
 

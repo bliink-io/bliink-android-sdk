@@ -1,7 +1,9 @@
 package io.bliink.sample.activities;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -56,5 +58,18 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(activity);
             }
         });
+
+        this.setIabData();
     }
+
+    private void setIabData() {
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putBoolean(Constants.IAB.HAS_CONSENT_STRING, false);
+        editor.putString(Constants.IAB.CONSENT_STRING, Constants.IAB.EXAMPLE_STRING);
+        editor.commit();
+    }
+
+
 }

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import io.bliink.sample.R;
 import io.bliink.sample.utils.Constants;
 import io.bliink.sdk.components.BLIINKInImageView;
-import io.bliink.sdk.services.models.BLIINKAdContent;
+import io.bliink.sdk.services.models.Ad;
 import io.bliink.sdk.utils.BLIINKUtils;
 
 import java.util.HashMap;
@@ -30,7 +30,7 @@ public class InImageBasic extends AppCompatActivity {
         options.put(getString(R.string.image_url), getString(R.string.image_url_value));
         options.put(getString(R.string.page_url), getString(R.string.page_url_value));
         options.put(getString(R.string.tags), getString(R.string.tags_value));
-        options.put("test", "true");
+        //options.put("test", "true");
 
         loadInImageContent();
     }
@@ -41,7 +41,7 @@ public class InImageBasic extends AppCompatActivity {
 
         mBliinkInImageListener = new BLIINKInImageView.AdResponseHandler() {
             @Override
-            public void adLoadingCompleted(BLIINKAdContent adContent) {
+            public void adLoadingCompleted(Ad adContent) {
                 BLIINKUtils.v(TAG, "adLoadingCompleted");
             }
 
